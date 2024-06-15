@@ -8,7 +8,7 @@ on:
         required: false
         default: "all"
   schedule:
-    - cron: 0 2 * * *
+    - cron: 0 1 * * *
 
 jobs:
   Config:
