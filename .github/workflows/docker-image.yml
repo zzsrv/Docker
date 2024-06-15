@@ -35,7 +35,7 @@ jobs:
           docker pull filebrowser/filebrowser:latest
           docker tag filebrowser/filebrowser:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/filebrowser/filebrowser:latest
           docker pull deluan/navidrome:latest
-          docker tag deluan/navidrome:latestt registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/deluan/navidrome:latest
+          docker tag deluan/navidrome:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/deluan/navidrome:latest
           docker pull jc21/nginx-proxy-manager:latest
           docker tag jc21/nginx-proxy-manager:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jc21/nginx-proxy-manager:latest
           docker pull linuxserver/transmission:latest
