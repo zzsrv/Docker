@@ -1,0 +1,30 @@
+name: Docker Image CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      INPUT_TARGET:
+        description: "Target to build (platform/target/subtarget)"
+        required: false
+        default: "all"
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  Config:
+    name: Generate Config
+    runs-on: ubuntu-latest
+    outputs:
+      TARGETS: ${{ steps.find-targets.outputs.TARGETS }}
+
+    steps:
+      - name: Save Image
+        run: |
+          docker pull nextcloud:latest
+          docker save -o nextcloud.tar nextcloud:latest
+
+      - name: Upload Image
+        uses: actions/upload-artifact@v3
+        with:
+          name: nextcloud.tar
+          path: nextcloud.tar 
