@@ -18,13 +18,53 @@ jobs:
       TARGETS: ${{ steps.find-targets.outputs.TARGETS }}
 
     steps:
+      - name: Login To Aliyun
+        uses: docker/login-action@v2
+        with:
+          registry: registry.cn-hangzhou.aliyuncs.com
+          username: ${{ secrets.ALIYUN_USERNAME }}
+          password: ${{ secrets.ALIYUN_PWD }}
       - name: Save Image
         run: |
           docker pull nextcloud:latest
-          docker save -o nextcloud.tar nextcloud:latest
+          docker tag nextcloud:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nextcloud:latest
+          docker pull p3terx/aria2-pro:latest
+          docker tag p3terx/aria2-pro:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/p3terx/aria2-pro:latest
+          docker pull jeessy/ddns-go:latest
+          docker tag jeessy/ddns-go:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jeessy/ddns-go:latest
+          docker pull filebrowser/filebrowser:latest
+          docker tag filebrowser/filebrowser:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/filebrowser/filebrowser:latest
+          docker pull deluan/navidrome:latest
+          docker tag deluan/navidrome:latestt registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/deluan/navidrome:latest
+          docker pull jc21/nginx-proxy-manager:latest
+          docker tag jc21/nginx-proxy-manager:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jc21/nginx-proxy-manager:latest
+          docker pull linuxserver/transmission:latest
+          docker tag linuxserver/transmission:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/linuxserver/transmission:latest
+          docker pull immich-app/immich-server:release
+          docker tag immich-app/immich-server:release registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-server:release
+          docker pull immich-app/immich-machine-learning:release
+          docker tag immich-app/immich-machine-learning:release registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-machine-learning:release
+          docker pull redis:6.2-alpine
+          docker tag redis:6.2-alpine registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/redis:6.2-alpine
+          docker pull tensorchord/pgvecto-rs:pg14-v0.2.0
+          docker tag  tensorchord/pgvecto-rs:pg14-v0.2.0 registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/ tensorchord/pgvecto-rs:pg14-v0.2.0
 
-      - name: Upload Image
-        uses: actions/upload-artifact@v3
+      - name: Build and push
+        uses: docker/build-push-action@v5
         with:
-          name: nextcloud.tar
-          path: nextcloud.tar 
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: |
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nextcloud:latest
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/p3terx/aria2-pro:latest
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jeessy/ddns-go:latest
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/filebrowser/filebrowser:latest
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/deluan/navidrome:latest
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jc21/nginx-proxy-manager:latest
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/linuxserver/transmission:latest
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-server:release
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-machine-learning:release
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/redis:6.2-alpine
+            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/tensorchord/pgvecto-rs:pg14-v0.2.0
+
