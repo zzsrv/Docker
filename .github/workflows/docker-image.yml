@@ -40,10 +40,10 @@ jobs:
           docker tag jc21/nginx-proxy-manager:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jc21/nginx-proxy-manager:latest
           docker pull linuxserver/transmission:latest
           docker tag linuxserver/transmission:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/linuxserver/transmission:latest
-          docker pull immich-app/immich-server:release
-          docker tag immich-app/immich-server:release registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-server:release
-          docker pull immich-app/immich-machine-learning:release
-          docker tag immich-app/immich-machine-learning:release registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-machine-learning:release
+          docker pull ghcr.io/immich-app/immich-server:release
+          docker tag ghcr.io/immich-app/immich-server:release registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-server:release
+          docker pull ghcr.io/immich-app/immich-machine-learning:release
+          docker tag ghcr.io/immich-app/immich-machine-learning:release registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-machine-learning:release
           docker pull redis:6.2-alpine
           docker tag redis:6.2-alpine registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/redis:6.2-alpine
           docker pull tensorchord/pgvecto-rs:pg14-v0.2.0
