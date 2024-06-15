@@ -29,9 +29,9 @@ jobs:
           # docker tag nextcloud:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nextcloud:latest
           # docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nextcloud:latest
           
-          docker pull p3terx/aria2-pro:latest
-          docker tag p3terx/aria2-pro:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/p3terx/aria2-pro:latest
-          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/p3terx/aria2-pro:latest
+          # docker pull p3terx/aria2-pro:latest
+          # docker tag p3terx/aria2-pro:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/p3terx/aria2-pro:latest
+          # docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/p3terx/aria2-pro:latest
           
           docker pull jeessy/ddns-go:latest
           docker tag jeessy/ddns-go:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jeessy/ddns-go:latest
