@@ -47,7 +47,7 @@ jobs:
           docker pull redis:6.2-alpine
           docker tag redis:6.2-alpine registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/redis:6.2-alpine
           docker pull tensorchord/pgvecto-rs:pg14-v0.2.0
-          docker tag  tensorchord/pgvecto-rs:pg14-v0.2.0 registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/ tensorchord/pgvecto-rs:pg14-v0.2.0
+          docker tag tensorchord/pgvecto-rs:pg14-v0.2.0 registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/tensorchord/pgvecto-rs:pg14-v0.2.0
 
       - name: Build and push
         uses: docker/build-push-action@v5
