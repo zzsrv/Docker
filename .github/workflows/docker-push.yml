@@ -25,46 +25,33 @@ jobs:
           
       - name: docker pull and tag and push Image
         run: |
-          # docker pull nextcloud:latest
-          # docker tag nextcloud:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nextcloud:latest
-          # docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nextcloud:latest
-          
           docker pull p3terx/aria2-pro:latest
           docker tag p3terx/aria2-pro:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/p3terx/aria2-pro:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/p3terx/aria2-pro:latest
-          
           docker pull jeessy/ddns-go:latest
           docker tag jeessy/ddns-go:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jeessy/ddns-go:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jeessy/ddns-go:latest
-          
           docker pull filebrowser/filebrowser:latest
           docker tag filebrowser/filebrowser:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/filebrowser/filebrowser:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/filebrowser/filebrowser:latest
-          
           docker pull deluan/navidrome:latest
           docker tag deluan/navidrome:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/deluan/navidrome:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/deluan/navidrome:latest
-          
           docker pull jc21/nginx-proxy-manager:latest
           docker tag jc21/nginx-proxy-manager:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jc21/nginx-proxy-manager:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jc21/nginx-proxy-manager:latest
-          
           docker pull linuxserver/transmission:latest
           docker tag linuxserver/transmission:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/linuxserver/transmission:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/linuxserver/transmission:latest
-          
           docker pull ghcr.io/immich-app/immich-server:release
           docker tag ghcr.io/immich-app/immich-server:release registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-server:release
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-server:release
-          
           docker pull ghcr.io/immich-app/immich-machine-learning:release
           docker tag ghcr.io/immich-app/immich-machine-learning:release registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-machine-learning:release
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-machine-learning:release
-          
           docker pull redis:6.2-alpine
           docker tag redis:6.2-alpine registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/redis:6.2-alpine
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/redis:6.2-alpine
-          
           docker pull tensorchord/pgvecto-rs:pg14-v0.2.0
           docker tag tensorchord/pgvecto-rs:pg14-v0.2.0 registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/tensorchord/pgvecto-rs:pg14-v0.2.0
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/tensorchord/pgvecto-rs:pg14-v0.2.0
