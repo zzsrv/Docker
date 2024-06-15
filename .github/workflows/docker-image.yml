@@ -22,7 +22,7 @@ jobs:
           registry: registry.cn-hangzhou.aliyuncs.com
           username: ${{ secrets.ALIYUN_USERNAME }}
           password: ${{ secrets.ALIYUN_PWD }}
-      - name: Save Image
+      - name: docker pull and tag Image
         run: |
           docker pull nextcloud:latest
           docker tag nextcloud:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nextcloud:latest
@@ -47,22 +47,17 @@ jobs:
           docker pull tensorchord/pgvecto-rs:pg14-v0.2.0
           docker tag tensorchord/pgvecto-rs:pg14-v0.2.0 registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/tensorchord/pgvecto-rs:pg14-v0.2.0
 
-      - name: Build and push
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          platforms: linux/amd64
-          push: true
-          tags: |
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nextcloud:latest
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/p3terx/aria2-pro:latest
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jeessy/ddns-go:latest
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/filebrowser/filebrowser:latest
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/deluan/navidrome:latest
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jc21/nginx-proxy-manager:latest
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/linuxserver/transmission:latest
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-server:release
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-machine-learning:release
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/redis:6.2-alpine
-            registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/tensorchord/pgvecto-rs:pg14-v0.2.0
+      - name: docker push Image
+        run: |
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nextcloud:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/p3terx/aria2-pro:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jeessy/ddns-go:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/filebrowser/filebrowser:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/deluan/navidrome:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jc21/nginx-proxy-manager:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/linuxserver/transmission:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-server:release
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/immich-app/immich-machine-learning:release
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/redis:6.2-alpine
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/tensorchord/pgvecto-rs:pg14-v0.2.0
 
