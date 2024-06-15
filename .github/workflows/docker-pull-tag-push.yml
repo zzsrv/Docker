@@ -2,17 +2,12 @@ name: Docker Image CI
 
 on:
   workflow_dispatch:
-    inputs:
-      INPUT_TARGET:
-        description: "Target to build (platform/target/subtarget)"
-        required: false
-        default: "all"
+
   schedule:
     - cron: 0 1 * * *
 
 jobs:
   Config:
-    name: Generate Config
     runs-on: ubuntu-latest
 
     steps:
