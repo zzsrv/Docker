@@ -1,7 +1,7 @@
 # [Docker](https://github.com/zzsrv/Docker)
 
-[![GitHub Stars](https://img.shields.io/github/stars/zzsrv/OpenWrt-Docker.svg?style=flat-square&label=Stars&logo=github)](https://github.com/zzsrv/OpenWrt-Docker/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/zzsrv/OpenWrt-Docker.svg?style=flat-square&label=Forks&logo=github)](https://github.com/zzsrv/OpenWrt-Docker/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/zzsrv/Docker.svg?style=flat-square&label=Stars&logo=github)](https://github.com/zzsrv/Docker/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/zzsrv/Docker.svg?style=flat-square&label=Forks&logo=github)](https://github.com/zzsrv/Docker/fork)
 
 Docker常用镜像仓库(每日更新到最新版镜像)。
 
