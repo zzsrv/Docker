@@ -67,3 +67,15 @@ jobs:
           docker pull tensorchord/pgvecto-rs:pg14-v0.2.0
           docker tag tensorchord/pgvecto-rs:pg14-v0.2.0 registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/pgvecto-rs:pg14-v0.2.0
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/pgvecto-rs:pg14-v0.2.0
+
+          docker pull whyour/qinglong:latest
+          docker tag whyour/qinglong:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/qinglong:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/qinglong:latest
+
+          docker pull jxxghp/moviepilot:latest
+          docker tag jxxghp/moviepilot:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/moviepilot:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/moviepilot:latest
+
+          docker pull iyuucn/iyuuplus-dev:latest
+          docker tag iyuucn/iyuuplus-dev:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/iyuuplus-dev:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/iyuuplus-dev:latest
