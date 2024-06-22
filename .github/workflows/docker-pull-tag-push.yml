@@ -83,3 +83,7 @@ jobs:
           docker pull iyuucn/iyuuplus:latest
           docker tag iyuucn/iyuuplus:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/iyuuplus:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/iyuuplus:latest
+
+          docker pull lovechen/embyserver:latest
+          docker tag lovechen/embyserver:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/embyserver:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/embyserver:latest
