@@ -29,6 +29,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  whyour/qinglong:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/qinglong:latest |
 |  jxxghp/moviepilot:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/moviepilot:latest |
 |  iyuucn/iyuuplus-dev:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/iyuuplus-dev:latest |
+|  iyuucn/iyuuplus:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/iyuuplus:latest |
 |  待补充 | 待补充 |
 
 
