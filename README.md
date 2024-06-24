@@ -31,6 +31,10 @@ Github: <https://github.com/zzsrv/Docker>
 |  iyuucn/iyuuplus-dev:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/iyuuplus-dev:latest |
 |  iyuucn/iyuuplus:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/iyuuplus:latest |
 |  lovechen/embyserver:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/embyserver:latest |
+|  gdy666/lucky:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/lucky:latest |
+|  xhofe/alist:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/alist:latest |
+|  zhayujie/chatgpt-on-wechat:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/chatgpt-on-wechat:latest |
+|  cloudnas/clouddrive2-unstable:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/clouddrive2-unstable:latest |
 |  待补充 | 待补充 |
 
 
