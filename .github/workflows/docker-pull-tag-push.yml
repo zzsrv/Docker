@@ -87,3 +87,19 @@ jobs:
           docker pull lovechen/embyserver:latest
           docker tag lovechen/embyserver:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/embyserver:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/embyserver:latest
+
+          docker pull gdy666/lucky:latest
+          docker tag gdy666/lucky:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/lucky:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/lucky:latest
+
+          docker pull xhofe/alist:latest
+          docker tag xhofe/alist:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/alist:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/alist:latest
+
+          docker pull zhayujie/chatgpt-on-wechat:latest
+          docker tag zhayujie/chatgpt-on-wechat:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/chatgpt-on-wechat:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/chatgpt-on-wechat:latest
+
+          docker pull cloudnas/clouddrive2-unstable:latest
+          docker tag cloudnas/clouddrive2-unstable:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/clouddrive2-unstable:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/clouddrive2-unstable:latest
