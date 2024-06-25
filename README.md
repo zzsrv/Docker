@@ -35,6 +35,8 @@ Github: <https://github.com/zzsrv/Docker>
 |  xhofe/alist:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/alist:latest |
 |  zhayujie/chatgpt-on-wechat:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/chatgpt-on-wechat:latest |
 |  cloudnas/clouddrive2-unstable:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/clouddrive2-unstable:latest |
+|  dreamacro/clash:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/clash:latest |
+|  neosmemo/memos:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/memos:latest |
 |  待补充 | 待补充 |
 
 
