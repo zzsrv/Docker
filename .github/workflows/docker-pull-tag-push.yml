@@ -103,3 +103,11 @@ jobs:
           docker pull cloudnas/clouddrive2-unstable:latest
           docker tag cloudnas/clouddrive2-unstable:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/clouddrive2-unstable:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/clouddrive2-unstable:latest
+
+          docker pull dreamacro/clash:latest
+          docker tag dreamacro/clash:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/clash:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/clash:latest
+
+          docker pull neosmemo/memos:latest
+          docker tag neosmemo/memos:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/memos:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/memos:latest
