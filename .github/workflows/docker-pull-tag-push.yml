@@ -111,3 +111,15 @@ jobs:
           docker pull neosmemo/memos:latest
           docker tag neosmemo/memos:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/memos:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/memos:latest
+
+          docker pull mzz2017/v2raya:latest
+          docker tag mzz2017/v2raya:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/v2raya:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/v2raya:latest
+
+          docker pull snowdreamtech/frpc:latest
+          docker tag snowdreamtech/frpc:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/frpc:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/frpc:latest
+
+          docker pull mnbf9rca/cups-google-print:latest
+          docker tag mnbf9rca/cups-google-print:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/cups-google-print:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/cups-google-print:latest
