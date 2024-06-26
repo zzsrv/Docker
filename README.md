@@ -37,6 +37,9 @@ Github: <https://github.com/zzsrv/Docker>
 |  cloudnas/clouddrive2-unstable:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/clouddrive2-unstable:latest |
 |  dreamacro/clash:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/clash:latest |
 |  neosmemo/memos:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/memos:latest |
+|  mzz2017/v2raya:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/v2raya:latest |
+|  snowdreamtech/frpc:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/frpc:latest |
+|  mnbf9rca/cups-google-print:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/cups-google-print:latest |
 |  待补充 | 待补充 |
 
 
