@@ -40,6 +40,8 @@ Github: <https://github.com/zzsrv/Docker>
 |  mzz2017/v2raya:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/v2raya:latest |
 |  snowdreamtech/frpc:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/frpc:latest |
 |  mnbf9rca/cups-google-print:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/cups-google-print:latest |
+|  gitlab/gitlab-ce:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/gitlab-ce:latest |
+|  jenkins/jenkins:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/jenkins:latest |
 |  待补充 | 待补充 |
 
 
