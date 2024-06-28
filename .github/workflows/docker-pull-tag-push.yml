@@ -123,3 +123,11 @@ jobs:
           docker pull mnbf9rca/cups-google-print:latest
           docker tag mnbf9rca/cups-google-print:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/cups-google-print:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/cups-google-print:latest
+
+          docker pull gitlab/gitlab-ce:latest
+          docker tag gitlab/gitlab-ce:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/gitlab-ce:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/gitlab-ce:latest
+
+          docker pull jenkins/jenkins:latest
+          docker tag jenkins/jenkins:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jenkins:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jenkins:latest
