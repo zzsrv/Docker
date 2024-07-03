@@ -14,6 +14,7 @@ Github: <https://github.com/zzsrv/Docker>
 
 |  支持镜像  |                  阿里云镜像仓库 (杭州)                  |
 | :-------------: | :-----------------------------------------------------: |
+|  zzsrv/openwrt:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/openwrt:latest |
 |  nextcloud:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nextcloud:latest |
 |  linuxserver/heimdall:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/heimdall:latest |
 |  p3terx/aria2-pro:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/aria2-pro:latest |
