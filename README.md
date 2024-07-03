@@ -54,9 +54,6 @@ docker pull registry.cn-hangzhou.aliyuncs.com/zzsrv/nextcloud:latest
 
 docker pull registry.cn-hangzhou.aliyuncs.com/zzsrv/heimdall:latest
 
-docker pull registry.cn-hangzhou.aliyuncs.com/zzsrv/aria2-pro:latest
-
-docker pull registry.cn-hangzhou.aliyuncs.com/zzsrv/ddns-go:latest
 
 2、原脚本不用做修改，原镜像地址可以直接使用（原理类似文件MD5，秒传等，上面已经把文件 Pull 下来了）
 
@@ -64,7 +61,4 @@ docker pull nextcloud:latest
 
 docker pull linuxserver/heimdall:latest
 
-docker pull p3terx/aria2-pro:latest
-
-docker pull jeessy/ddns-go:latest
 
