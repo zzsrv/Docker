@@ -49,16 +49,13 @@ Github: <https://github.com/zzsrv/Docker>
 ## 镜像使用方法
 
 1、先 Pull 阿里云镜像仓库的镜像，Pull时只需要原镜像最后一个“/”后的内容，然后再加上仓库地址“registry.cn-hangzhou.aliyuncs.com/zzsrv/”
-
+```
 docker pull registry.cn-hangzhou.aliyuncs.com/zzsrv/nextcloud:latest
-
 docker pull registry.cn-hangzhou.aliyuncs.com/zzsrv/heimdall:latest
-
+```
 
 2、原脚本不用做修改，原镜像地址可以直接使用（原理类似文件MD5，秒传等，上面已经把文件 Pull 下来了）
-
+```
 docker pull nextcloud:latest
-
 docker pull linuxserver/heimdall:latest
-
-
+```
