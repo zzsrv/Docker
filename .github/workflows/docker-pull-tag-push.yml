@@ -133,8 +133,8 @@ jobs:
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/jenkins:latest
 
           docker pull amilys/embyserver:latest
-          docker tag amilys/embyserver:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/embyserver:latest
-          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/embyserver:latest
+          docker tag amilys/embyserver:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/embyserver-amilys:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/embyserver-amilys:latest
 
           docker pull xianwei2022/stars.client:latest
           docker tag xianwei2022/stars.client:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/stars.client:latest
