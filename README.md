@@ -43,7 +43,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  mnbf9rca/cups-google-print:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/cups-google-print:latest |
 |  gitlab/gitlab-ce:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/gitlab-ce:latest |
 |  jenkins/jenkins:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/jenkins:latest |
-|  amilys/embyserver:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/embyserver:latest |
+|  amilys/embyserver:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/embyserver-amilys:latest |
 |  xianwei2022/stars.client:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/stars.client:latest |
 |  待补充 | 待补充 |
 
