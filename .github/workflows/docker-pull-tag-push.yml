@@ -139,3 +139,7 @@ jobs:
           docker pull xianwei2022/stars.client:latest
           docker tag xianwei2022/stars.client:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/stars.client:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/stars.client:latest
+
+          docker pull nastool/nas-tools:latest
+          docker tag nastool/nas-tools:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nas-tools:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nas-tools:latest
