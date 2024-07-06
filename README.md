@@ -45,6 +45,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  jenkins/jenkins:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/jenkins:latest |
 |  amilys/embyserver:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/embyserver-amilys:latest |
 |  xianwei2022/stars.client:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/stars.client:latest |
+|  nastool/nas-tools:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nas-tools:latest |
 |  待补充 | 待补充 |
 
 
