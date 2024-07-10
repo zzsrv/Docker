@@ -143,3 +143,11 @@ jobs:
           docker pull nastool/nas-tools:latest
           docker tag nastool/nas-tools:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nas-tools:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nas-tools:latest
+
+          docker pull linyuan0213/nas-tools:latest
+          docker tag linyuan0213/nas-tools:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nas-tools-linyuan0213:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nas-tools-linyuan0213:latest
+
+          docker pull linuxserver/plex:latest
+          docker tag linuxserver/plex:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/plex:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/plex:latest
