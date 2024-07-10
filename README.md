@@ -46,6 +46,8 @@ Github: <https://github.com/zzsrv/Docker>
 |  amilys/embyserver:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/embyserver-amilys:latest |
 |  xianwei2022/stars.client:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/stars.client:latest |
 |  nastool/nas-tools:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nas-tools:latest |
+|  linyuan0213/nas-tools:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nas-tools-linyuan0213:latest |
+|  linuxserver/plex:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/plex:latest |
 |  待补充 | 待补充 |
 
 
