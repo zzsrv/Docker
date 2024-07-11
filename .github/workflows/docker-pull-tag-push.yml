@@ -151,3 +151,7 @@ jobs:
           docker pull linuxserver/plex:latest
           docker tag linuxserver/plex:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/plex:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/plex:latest
+
+          docker pull haishanh/yacd:latest
+          docker tag haishanh/yacd:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/yacd:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/yacd:latest
