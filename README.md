@@ -48,6 +48,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  nastool/nas-tools:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nas-tools:latest |
 |  linyuan0213/nas-tools:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nas-tools-linyuan0213:latest |
 |  linuxserver/plex:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/plex:latest |
+|  haishanh/yacd:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/yacd:latest |
 |  待补充 | 待补充 |
 
 
