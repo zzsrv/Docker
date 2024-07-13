@@ -155,3 +155,7 @@ jobs:
           docker pull haishanh/yacd:latest
           docker tag haishanh/yacd:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/yacd:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/yacd:latest
+
+          docker pull talebook/calibre-websever:latest
+          docker tag talebook/calibre-websever:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/calibre-websever:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/calibre-websever:latest
