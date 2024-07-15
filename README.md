@@ -50,6 +50,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  linuxserver/plex:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/plex:latest |
 |  haishanh/yacd:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/yacd:latest |
 |  talebook/talebook:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/talebook:latest |
+|  chishin/nginx-proxy-manager-zh:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nginx-proxy-manager-zh:latest |
 |  待补充 | 待补充 |
 
 
