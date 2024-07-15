@@ -194,3 +194,8 @@ jobs:
           docker tag talebook/talebook:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/talebook:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/talebook:latest
           docker image rm talebook/talebook:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/talebook:latest
+
+          docker pull chishin/nginx-proxy-manager-zh:latest
+          docker tag chishin/nginx-proxy-manager-zh:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nginx-proxy-manager-zh:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nginx-proxy-manager-zh:latest
+          docker image rm chishin/nginx-proxy-manager-zh:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nginx-proxy-manager-zh:latest
