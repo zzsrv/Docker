@@ -1,0 +1,26 @@
+name: Docker Pull Tag Push
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  Config:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Login To Aliyun
+        uses: docker/login-action@v2
+        with:
+          registry: registry.cn-hangzhou.aliyuncs.com
+          username: ${{ secrets.ALIYUN_USERNAME }}
+          password: ${{ secrets.ALIYUN_PWD }}
+          
+      - name: docker pull and tag and push Image
+        run: |
+          docker pull linuxserver/transmission:version-3.00-r8
+          docker tag linuxserver/transmission:version-3.00-r8 registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/transmission:version-3.00-r8
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/transmission:version-3.00-r8
+          docker image rm linuxserver/transmission:version-3.00-r8 registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/transmission:version-3.00-r8
