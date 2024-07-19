@@ -1,10 +1,7 @@
-name: Docker Pull Tag Push
+name: One-Push
 
 on:
   workflow_dispatch:
-
-  schedule:
-    - cron: 0 0 * * *
 
 jobs:
   Config:
