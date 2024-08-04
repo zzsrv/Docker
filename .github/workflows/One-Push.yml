@@ -17,7 +17,7 @@ jobs:
           
       - name: docker pull and tag and push Image
         run: |
-          docker pull joyqi/typecho:nightly-php8.2-fpm
-          docker tag joyqi/typecho:nightly-php8.2-fpm registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-fpm
-          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-fpm
-          docker image rm joyqi/typecho:nightly-php8.2-fpm registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-fpm
+          docker pull joyqi/typecho:nightly-php8.2-apache
+          docker tag joyqi/typecho:nightly-php8.2-apache registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-apache
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-apache
+          docker image rm joyqi/typecho:nightly-php8.2-apache registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-apache
