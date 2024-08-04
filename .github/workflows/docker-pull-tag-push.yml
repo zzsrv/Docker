@@ -199,3 +199,8 @@ jobs:
           docker tag chishin/nginx-proxy-manager-zh:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nginx-proxy-manager-zh:latest
           docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nginx-proxy-manager-zh:latest
           docker image rm chishin/nginx-proxy-manager-zh:latest registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/nginx-proxy-manager-zh:latest
+
+          docker pull joyqi/typecho:nightly-php8.2-apache
+          docker tag joyqi/typecho:nightly-php8.2-apache registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-apache
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-apache
+          docker image rm joyqi/typecho:nightly-php8.2-apache registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-apache
