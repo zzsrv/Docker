@@ -17,7 +17,7 @@ jobs:
           
       - name: docker pull and tag and push Image
         run: |
-          docker pull linuxserver/transmission:version-3.00-r8
-          docker tag linuxserver/transmission:version-3.00-r8 registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/transmission:version-3.00-r8
-          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/transmission:version-3.00-r8
-          docker image rm linuxserver/transmission:version-3.00-r8 registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/transmission:version-3.00-r8
+          docker pull joyqi/typecho:nightly-php8.2-fpm
+          docker tag joyqi/typecho:nightly-php8.2-fpm registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-fpm
+          docker push registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-fpm
+          docker image rm joyqi/typecho:nightly-php8.2-fpm registry.cn-hangzhou.aliyuncs.com/${{ secrets.ALIYUN_NAMESPACES }}/typecho:nightly-php8.2-fpm
