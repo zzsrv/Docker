@@ -66,7 +66,7 @@ jobs:
         run: |
           export DOCKER_IMAGE=$(echo ${{ matrix.TARGETS }} | awk -F '=' '{print $1}')
           echo "DOCKER_IMAGE=$DOCKER_IMAGE" >> $GITHUB_ENV
-          export DOCKER_IMAGE_TARGET=$(echo ${{ env.DOCKER_IMAGE }} | awk -F '/' '{print $NF}')
+          export DOCKER_IMAGE_TARGET=$(echo ${{ matrix.TARGETS }} | awk -F '=' '{print $1}' | awk -F '/' '{print $NF}')
           echo "DOCKER_IMAGE_TARGET=$DOCKER_IMAGE_TARGET" >> $GITHUB_ENV
           export DOCKER_EXTERA_TAG=$(echo ${{ matrix.TARGETS }} | awk -F '=' '{print $2}')
           echo "DOCKER_EXTERA_TAG=$DOCKER_EXTERA_TAG" >> $GITHUB_ENV
