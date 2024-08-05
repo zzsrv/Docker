@@ -11,53 +11,55 @@ Github: <https://github.com/zzsrv/Docker>
 阿里云个人镜像限制300个仓库，理论上应该能满足上常用需求，使用时可以Fork项目自己修改，也可以提PR丰富仓库镜像后，直接通过如下地址使用。
 
 ### Docker 镜像地址
+#### 阿里云镜像仓库地址 (杭州)：registry.cn-hangzhou.aliyuncs.com
 
-|  支持镜像  |                  阿里云镜像仓库 (杭州)                  |
-| :-------------: | :-----------------------------------------------------: |
-|  zzsrv/openwrt:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/openwrt:latest |
-|  nextcloud:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nextcloud:latest |
-|  linuxserver/heimdall:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/heimdall:latest |
-|  p3terx/aria2-pro:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/aria2-pro:latest |
-|  jeessy/ddns-go:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/ddns-go:latest |
-|  filebrowser/filebrowser:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/filebrowser:latest |
-|  deluan/navidrome:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/navidrome:latest |
-|  jc21/nginx-proxy-manager:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nginx-proxy-manager:latest |
-|  linuxserver/transmission:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/transmission:latest |
-|  ghcr.io/immich-app/immich-server:release  | registry.cn-hangzhou.aliyuncs.com/zzsrv/immich-server:latest |
-|  ghcr.io/immich-app/immich-machine-learning:release  | registry.cn-hangzhou.aliyuncs.com/zzsrv/immich-machine-learning:latest |
-|  redis:6.2-alpine  | registry.cn-hangzhou.aliyuncs.com/zzsrv/redis:6.2-alpine |
-|  tensorchord/pgvecto-rs:pg14-v0.2.0  | registry.cn-hangzhou.aliyuncs.com/zzsrv/pgvecto-rs:pg14-v0.2.0 |
-|  whyour/qinglong:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/qinglong:latest |
-|  jxxghp/moviepilot:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/moviepilot:latest |
-|  iyuucn/iyuuplus-dev:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/iyuuplus-dev:latest |
-|  iyuucn/iyuuplus:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/iyuuplus:latest |
-|  lovechen/embyserver:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/embyserver:latest |
-|  gdy666/lucky:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/lucky:latest |
-|  xhofe/alist:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/alist:latest |
-|  zhayujie/chatgpt-on-wechat:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/chatgpt-on-wechat:latest |
-|  cloudnas/clouddrive2-unstable:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/clouddrive2-unstable:latest |
-|  dreamacro/clash:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/clash:latest |
-|  neosmemo/memos:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/memos:latest |
-|  mzz2017/v2raya:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/v2raya:latest |
-|  snowdreamtech/frpc:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/frpc:latest |
-|  mnbf9rca/cups-google-print:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/cups-google-print:latest |
-|  gitlab/gitlab-ce:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/gitlab-ce:latest |
-|  jenkins/jenkins:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/jenkins:latest |
-|  amilys/embyserver:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/embyserver-amilys:latest |
-|  xianwei2022/stars.client:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/stars.client:latest |
-|  nastool/nas-tools:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nas-tools:latest |
-|  linyuan0213/nas-tools:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nas-tools-linyuan0213:latest |
-|  linuxserver/plex:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/plex:latest |
-|  haishanh/yacd:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/yacd:latest |
-|  talebook/talebook:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/talebook:latest |
-|  chishin/nginx-proxy-manager-zh:latest  | registry.cn-hangzhou.aliyuncs.com/zzsrv/nginx-proxy-manager-zh:latest |
-|  joyqi/typecho:nightly-php8.2-apache  | registry.cn-hangzhou.aliyuncs.com/zzsrv/typecho:nightly-php8.2-apache |
+|  源镜像  |        加速镜像        |
+| :-------------: | :------------------------: |
+|  zzsrv/openwrt:latest  | zzsrv/openwrt:latest |
+|  nextcloud:latest  | zzsrv/nextcloud:latest |
+|  linuxserver/heimdall:latest  | zzsrv/heimdall:latest |
+|  p3terx/aria2-pro:latest  | zzsrv/aria2-pro:latest |
+|  jeessy/ddns-go:latest  | zzsrv/ddns-go:latest |
+|  filebrowser/filebrowser:latest  | zzsrv/filebrowser:latest |
+|  deluan/navidrome:latest  | zzsrv/navidrome:latest |
+|  jc21/nginx-proxy-manager:latest  | zzsrv/nginx-proxy-manager:latest |
+|  linuxserver/transmission:latest  | zzsrv/transmission:latest |
+|  ghcr.io/immich-app/immich-server:release  | zzsrv/immich-server:latest |
+|  ghcr.io/immich-app/immich-machine-learning:release  | zzsrv/immich-machine-learning:latest |
+|  redis:latest  | zzsrv/redis:latest |
+|  redis:6.2-alpine  | zzsrv/redis:6.2-alpine |
+|  tensorchord/pgvecto-rs:pg14-v0.2.0  | zzsrv/pgvecto-rs:pg14-v0.2.0 |
+|  whyour/qinglong:latest  | zzsrv/qinglong:latest |
+|  jxxghp/moviepilot:latest  | zzsrv/moviepilot:latest |
+|  iyuucn/iyuuplus-dev:latest  | zzsrv/iyuuplus-dev:latest |
+|  iyuucn/iyuuplus:latest  | zzsrv/iyuuplus:latest |
+|  lovechen/embyserver:latest  | zzsrv/embyserver:latest |
+|  amilys/embyserver:latest  | zzsrv/embyserver:latest-amilys |
+|  gdy666/lucky:latest  | zzsrv/lucky:latest |
+|  xhofe/alist:latest  | zzsrv/alist:latest |
+|  zhayujie/chatgpt-on-wechat:latest  | zzsrv/chatgpt-on-wechat:latest |
+|  cloudnas/clouddrive2-unstable:latest  | zzsrv/clouddrive2-unstable:latest |
+|  dreamacro/clash:latest  | zzsrv/clash:latest |
+|  neosmemo/memos:latest  | zzsrv/memos:latest |
+|  mzz2017/v2raya:latest  | zzsrv/v2raya:latest |
+|  snowdreamtech/frpc:latest  | zzsrv/frpc:latest |
+|  mnbf9rca/cups-google-print:latest  | zzsrv/cups-google-print:latest |
+|  gitlab/gitlab-ce:latest  | zzsrv/gitlab-ce:latest |
+|  jenkins/jenkins:latest  | zzsrv/jenkins:latest |
+|  xianwei2022/stars.client:latest  | zzsrv/stars.client:latest |
+|  nastool/nas-tools:latest  | zzsrv/nas-tools:latest |
+|  linyuan0213/nas-tools:latest  | zzsrv/nas-tools:latest-linyuan0213 |
+|  linuxserver/plex:latest  | zzsrv/plex:latest |
+|  haishanh/yacd:latest  | zzsrv/yacd:latest |
+|  talebook/talebook:latest  | zzsrv/talebook:latest |
+|  chishin/nginx-proxy-manager-zh:latest  | zzsrv/nginx-proxy-manager-zh:latest |
+|  joyqi/typecho:nightly-php8.2-apache  | zzsrv/typecho:nightly-php8.2-apache |
 |  待补充 | 待补充 |
 
 
-## 镜像使用方法
+## 加速镜像使用方法
 
-1、先 Pull 阿里云镜像仓库的镜像，Pull时只需要原镜像最后一个“/”后的内容，然后再加上仓库地址“registry.cn-hangzhou.aliyuncs.com/zzsrv/”
+1、先 Pull 阿里云镜像仓库的镜像
 ```
 docker pull registry.cn-hangzhou.aliyuncs.com/zzsrv/nextcloud:latest
 docker pull registry.cn-hangzhou.aliyuncs.com/zzsrv/heimdall:latest
