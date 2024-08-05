@@ -1,0 +1,82 @@
+name: Actions Docker Images
+
+env:
+  REGISTRY_URL: registry.cn-hangzhou.aliyuncs.com
+
+on:
+  workflow_dispatch:
+    inputs:
+      INPUT_TARGET:
+        description: "Image To Push"
+        required: false
+        default: "all"
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  Config:
+    name: Generate Config
+    runs-on: ubuntu-latest
+    outputs:
+      TARGETS: ${{ steps.find-targets.outputs.TARGETS }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Find Targets
+        id: find-targets
+        env:
+          INPUT_TARGET: ${{ github.event.inputs.INPUT_TARGET }}
+        run: |
+          if [ "$INPUT_TARGET" = "all" ] || [ "$INPUT_TARGET" = "" ]; then
+            export TARGETS="$(cat images)"
+          else
+            export TARGETS="$INPUT_TARGET"
+          fi
+          JSON='{"config": ["default"], "targets":['
+          FIRST=1
+          for TARGET in $TARGETS; do
+          [[ $FIRST -ne 1 ]] && JSON="$JSON"','
+          JSON="$JSON"'"'"${TARGET}"'"'
+          FIRST=0
+          done
+          JSON="$JSON"']}'
+          echo $JSON
+          echo "TARGETS=$JSON" >> $GITHUB_OUTPUT
+
+  Docker-Images:
+    name: ${{ matrix.TARGETS }}
+    needs: [Config]
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: ${{fromJson(needs.Config.outputs.TARGETS)}}
+
+    steps:
+      - name: Login To Aliyun
+        uses: docker/login-action@v2
+        with:
+          registry: registry.cn-hangzhou.aliyuncs.com
+          username: ${{ secrets.ALIYUN_USERNAME }}
+          password: ${{ secrets.ALIYUN_PWD }}
+
+      - name: Generate Variables
+        id: env
+        run: |
+          export DOCKER_IMAGE=$(echo ${{ matrix.TARGETS }} | awk -F '=' '{print $1}')
+          echo "DOCKER_IMAGE=$DOCKER_IMAGE" >> $GITHUB_ENV
+          export DOCKER_IMAGE_TARGET=$(echo ${{ env.DOCKER_IMAGE }} | awk -F '/' '{print $NF}')
+          echo "DOCKER_IMAGE_TARGET=$DOCKER_IMAGE_TARGET" >> $GITHUB_ENV
+          export DOCKER_EXTERA_TAG=$(echo ${{ matrix.TARGETS }} | awk -F '=' '{print $2}')
+          echo "DOCKER_EXTERA_TAG=$DOCKER_EXTERA_TAG" >> $GITHUB_ENV
+          
+      - name: docker pull and tag and push Image
+        run: |
+
+      - name: Docker Image Tag And Push
+        run: |
+          docker pull ${{ env.DOCKER_IMAGE }}
+          docker tag ${{ env.DOCKER_IMAGE }} ${{ env.REGISTRY_URL }}/${{ secrets.ALIYUN_NAMESPACES }}/${{ env.DOCKER_IMAGE_TARGET }}
+          docker push ${{ env.REGISTRY_URL }}/${{ secrets.ALIYUN_NAMESPACES }}/${{ env.DOCKER_IMAGE_TARGET }}
+          docker image rm ${{ env.DOCKER_IMAGE }} ${{ env.REGISTRY_URL }}/${{ secrets.ALIYUN_NAMESPACES }}/${{ env.DOCKER_IMAGE_TARGET }}
