@@ -71,12 +71,20 @@ jobs:
           export DOCKER_EXTERA_TAG=$(echo ${{ matrix.TARGETS }} | awk -F '=' '{print $2}')
           echo "DOCKER_EXTERA_TAG=$DOCKER_EXTERA_TAG" >> $GITHUB_ENV
           
-      - name: docker pull and tag and push Image
-        run: |
-
-      - name: Docker Image Tag And Push
+      - name: Docker Image Pull
         run: |
           docker pull ${{ env.DOCKER_IMAGE }}
+
+      - name: Docker Image Tag And Push（LATEST_TAG）
+        if: env.DOCKER_EXTERA_TAG == ''
+        run: |
           docker tag ${{ env.DOCKER_IMAGE }} ${{ env.REGISTRY_URL }}/${{ secrets.ALIYUN_NAMESPACES }}/${{ env.DOCKER_IMAGE_TARGET }}
           docker push ${{ env.REGISTRY_URL }}/${{ secrets.ALIYUN_NAMESPACES }}/${{ env.DOCKER_IMAGE_TARGET }}
           docker image rm ${{ env.DOCKER_IMAGE }} ${{ env.REGISTRY_URL }}/${{ secrets.ALIYUN_NAMESPACES }}/${{ env.DOCKER_IMAGE_TARGET }}
+          
+      - name: Docker Image Tag And Push（EXTERA_TAG）
+        if: env.DOCKER_EXTERA_TAG != ''
+        run: |
+          docker tag ${{ env.DOCKER_IMAGE }} ${{ env.REGISTRY_URL }}/${{ secrets.ALIYUN_NAMESPACES }}/${{ env.DOCKER_IMAGE_TARGET }}-${{ env.DOCKER_EXTERA_TAG }}
+          docker push ${{ env.REGISTRY_URL }}/${{ secrets.ALIYUN_NAMESPACES }}/${{ env.DOCKER_IMAGE_TARGET }}-${{ env.DOCKER_EXTERA_TAG }}
+          docker image rm ${{ env.DOCKER_IMAGE }} ${{ env.REGISTRY_URL }}/${{ secrets.ALIYUN_NAMESPACES }}/${{ env.DOCKER_IMAGE_TARGET }}-${{ env.DOCKER_EXTERA_TAG }}
