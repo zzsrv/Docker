@@ -55,6 +55,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  talebook/talebook:latest  | zzsrv/talebook:latest |
 |  chishin/nginx-proxy-manager-zh:latest  | zzsrv/nginx-proxy-manager-zh:latest |
 |  joyqi/typecho:nightly-php8.2-apache  | zzsrv/typecho:nightly-php8.2-apache |
+|  neilpang/acme.sh:latest  | zzsrv/acme.sh:latest |
 |  待补充 | 待补充 |
 
 
