@@ -40,5 +40,6 @@ haishanh/yacd:latest
 talebook/talebook:latest
 joyqi/typecho:nightly-php8.2-apache
 neilpang/acme.sh:latest
+alpine:latest
 linuxserver/qbittorrent:latest
 nevinee/qbittorrent:latest=nevinee
