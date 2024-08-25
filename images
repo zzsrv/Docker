@@ -33,6 +33,7 @@ jenkins/jenkins:latest
 xianwei2022/stars.client:latest
 nastool/nas-tools:latest
 linyuan0213/nas-tools:latest=linyuan0213
+linyuan0213/nas-tools:3.5.6=linyuan0213-3.5.6
 hsuyelin/nas-tools:latest=hsuyelin
 linuxserver/plex:latest
 haishanh/yacd:latest
