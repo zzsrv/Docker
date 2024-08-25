@@ -49,6 +49,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  xianwei2022/stars.client:latest  | zzsrv/stars.client:latest |
 |  nastool/nas-tools:latest  | zzsrv/nas-tools:latest |
 |  linyuan0213/nas-tools:latest  | zzsrv/nas-tools:latest-linyuan0213 |
+|  linyuan0213/nas-tools:3.5.6  | zzsrv/nas-tools:latest-linyuan0213-3.5.6 |
 |  hsuyelin/nas-tools:latest  | zzsrv/nas-tools:latest-hsuyelin |
 |  linuxserver/plex:latest  | zzsrv/plex:latest |
 |  haishanh/yacd:latest  | zzsrv/yacd:latest |
