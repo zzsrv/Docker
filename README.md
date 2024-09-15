@@ -60,6 +60,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  linuxserver/qbittorrent:latest  | zzsrv/qbittorrent:latest |
 |  nevinee/qbittorrent:latest  | zzsrv/qbittorrent:latest-nevinee |
 |  alpine:latest  | zzsrv/alpine:latest |
+|  mysql:latest  | zzsrv/mysql:latest |
 |  待补充 | 待补充 |
 
 
