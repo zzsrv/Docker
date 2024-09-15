@@ -43,3 +43,4 @@ neilpang/acme.sh:latest
 alpine:latest
 linuxserver/qbittorrent:latest
 nevinee/qbittorrent:latest=nevinee
+mysql:latest
