@@ -44,3 +44,4 @@ alpine:latest
 linuxserver/qbittorrent:latest
 nevinee/qbittorrent:latest=nevinee
 mysql:latest
+zmister/mrdoc:v8
