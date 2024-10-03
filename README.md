@@ -62,6 +62,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  alpine:latest  | zzsrv/alpine:latest |
 |  mysql:latest  | zzsrv/mysql:latest |
 |  zmister/mrdoc:v8  | zzsrv/mrdoc:v8 |
+|  frooodle/s-pdf:latest  | zzsrv/s-pdf:latest |
 |  待补充 | 待补充 |
 
 
