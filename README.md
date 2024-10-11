@@ -63,6 +63,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  mysql:latest  | zzsrv/mysql:latest |
 |  zmister/mrdoc:v8  | zzsrv/mrdoc:v8 |
 |  frooodle/s-pdf:latest  | zzsrv/s-pdf:latest |
+|  ddsderek/wxchat:latest  | zzsrv/wxchat:latest |
 |  待补充 | 待补充 |
 
 
