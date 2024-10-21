@@ -64,6 +64,9 @@ Github: <https://github.com/zzsrv/Docker>
 |  zmister/mrdoc:v8  | zzsrv/mrdoc:v8 |
 |  frooodle/s-pdf:latest  | zzsrv/s-pdf:latest |
 |  ddsderek/wxchat:latest  | zzsrv/wxchat:latest |
+|  postgres:latest  | zzsrv/postgres:latest |
+|  postgres:16  | zzsrv/postgres:16 |
+|  joplin/server:latest  | zzsrv/server:latest-joplin |
 |  待补充 | 待补充 |
 
 
