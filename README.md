@@ -67,6 +67,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  postgres:latest  | zzsrv/postgres:latest |
 |  postgres:16  | zzsrv/postgres:16 |
 |  joplin/server:latest  | zzsrv/server:latest-joplin |
+|  hausen1012/squoosh:latest  | zzsrv/squoosh:latest |
 |  待补充 | 待补充 |
 
 
