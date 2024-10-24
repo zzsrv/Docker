@@ -50,3 +50,4 @@ ddsderek/wxchat:latest
 postgres:latest
 postgres:16
 joplin/server:latest=joplin
+hausen1012/squoosh:latest
