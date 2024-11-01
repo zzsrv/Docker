@@ -24,8 +24,8 @@ Github: <https://github.com/zzsrv/Docker>
 |  deluan/navidrome:latest  | zzsrv/navidrome:latest |
 |  jc21/nginx-proxy-manager:latest  | zzsrv/nginx-proxy-manager:latest |
 |  linuxserver/transmission:latest  | zzsrv/transmission:latest |
-|  ghcr.io/immich-app/immich-server:release  | zzsrv/immich-server:latest |
-|  ghcr.io/immich-app/immich-machine-learning:release  | zzsrv/immich-machine-learning:latest |
+|  ghcr.io/immich-app/immich-server:release  | zzsrv/immich-server:release |
+|  ghcr.io/immich-app/immich-machine-learning:release  | zzsrv/immich-machine-learning:release |
 |  redis:latest  | zzsrv/redis:latest |
 |  redis:6.2-alpine  | zzsrv/redis:6.2-alpine |
 |  tensorchord/pgvecto-rs:pg14-v0.2.0  | zzsrv/pgvecto-rs:pg14-v0.2.0 |
