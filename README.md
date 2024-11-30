@@ -8,7 +8,7 @@ Github: <https://github.com/zzsrv/Docker>
 
 每日上午 8 点 Pull Docker 常用镜像仓库，Pull 完成后将同时 Push 到阿里云镜像仓库 (杭州) 。
 
-阿里云个人镜像限制300个仓库，理论上应该能满足上常用需求，使用时可以Fork项目自己修改，也可以直接通过如下地址使用。
+阿里云个人镜像限制300个仓库，理论上应该能满足常用需求，使用时可以Fork项目自己修改，也可以直接通过如下地址使用。
 
 ### Docker 镜像地址
 #### 阿里云镜像仓库地址 (杭州)：registry.cn-hangzhou.aliyuncs.com
