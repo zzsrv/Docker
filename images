@@ -53,3 +53,6 @@ joplin/server:latest=joplin
 hausen1012/squoosh:latest
 corentinth/it-tools:latest
 nattertool/natter:latest
+nyanmisaka/jellyfin:latest=nyanmisaka
+nyanmisaka/jellyfin:10.8.9-legacy=nyanmisaka—10.8.9-legacy
+nyanmisaka/jellyfin:10.8.8-legacy=nyanmisaka-10.8.8-legacy
