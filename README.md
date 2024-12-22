@@ -72,6 +72,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  frooodle/s-pdf:latest-fat  | zzsrv/s-pdf:latest-fat |
 |  nattertool/natter:latest  | zzsrv/natter:latest |
 |  nyanmisaka/jellyfin:latest  | zzsrv/jellyfin:latest-nyanmisaka |
+|  xhongc/music_tag_web:latest  | zzsrv/music_tag_web:latest |
 |  待补充 | 待补充 |
 
 
