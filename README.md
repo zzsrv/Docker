@@ -73,6 +73,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  nattertool/natter:latest  | zzsrv/natter:latest |
 |  nyanmisaka/jellyfin:latest  | zzsrv/jellyfin:latest-nyanmisaka |
 |  xhongc/music_tag_web:latest  | zzsrv/music_tag_web:latest |
+|  homeassistant/home-assistant:latest  | zzsrv/home-assistant:latest |
 |  待补充 | 待补充 |
 
 
