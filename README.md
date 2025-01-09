@@ -74,6 +74,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  nyanmisaka/jellyfin:latest  | zzsrv/jellyfin:latest-nyanmisaka |
 |  xhongc/music_tag_web:latest  | zzsrv/music_tag_web:latest |
 |  homeassistant/home-assistant:latest  | zzsrv/home-assistant:latest |
+|  tinymediamanager/tinymediamanager:latest  | zzsrv/tinymediamanager:latest |
 |  待补充 | 待补充 |
 
 
