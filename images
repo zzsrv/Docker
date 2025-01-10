@@ -57,3 +57,4 @@ nyanmisaka/jellyfin:latest=nyanmisaka
 xhongc/music_tag_web:latest
 homeassistant/home-assistant:latest
 tinymediamanager/tinymediamanager:latest
+certbot/certbot:latest
