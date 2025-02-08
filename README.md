@@ -33,7 +33,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  jxxghp/moviepilot:latest  | zzsrv/moviepilot:latest |
 |  iyuucn/iyuuplus-dev:latest  | zzsrv/iyuuplus-dev:latest |
 |  iyuucn/iyuuplus:latest  | zzsrv/iyuuplus:latest |
-|  lovechen/embyserver:latest  | zzsrv/embyserver:latest |
+|  <del>lovechen/embyserver:latest</del>  | <del>zzsrv/embyserver:latest</del> |
 |  amilys/embyserver:latest  | zzsrv/embyserver:latest-amilys |
 |  gdy666/lucky:latest  | zzsrv/lucky:latest |
 |  xhofe/alist:latest  | zzsrv/alist:latest |
