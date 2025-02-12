@@ -76,6 +76,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  homeassistant/home-assistant:latest  | zzsrv/home-assistant:latest |
 |  tinymediamanager/tinymediamanager:latest  | zzsrv/tinymediamanager:latest |
 |  certbot/certbot:latest  | zzsrv/certbot:latest |
+|  youshandefeiyang/allinone:latest  | zzsrv/allinone:latest |
 |  待补充 | 待补充 |
 
 
