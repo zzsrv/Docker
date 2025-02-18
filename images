@@ -58,3 +58,4 @@ homeassistant/home-assistant:latest
 tinymediamanager/tinymediamanager:latest
 certbot/certbot:latest
 youshandefeiyang/allinone:latest
+ollama/ollama:latest
