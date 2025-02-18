@@ -77,6 +77,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  tinymediamanager/tinymediamanager:latest  | zzsrv/tinymediamanager:latest |
 |  certbot/certbot:latest  | zzsrv/certbot:latest |
 |  youshandefeiyang/allinone:latest  | zzsrv/allinone:latest |
+|  ollama/ollama:latest  | zzsrv/ollama:latest |
 |  待补充 | 待补充 |
 
 
