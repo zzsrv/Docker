@@ -61,7 +61,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  nevinee/qbittorrent:latest  | zzsrv/qbittorrent:latest-nevinee |
 |  alpine:latest  | zzsrv/alpine:latest |
 |  mysql:latest  | zzsrv/mysql:latest |
-|  zmister/mrdoc:v8  | zzsrv/mrdoc:v8 |
+|  zmister/mrdoc:v9.3  | zzsrv/mrdoc:v9.3 |
 |  ddsderek/wxchat:latest  | zzsrv/wxchat:latest |
 |  postgres:latest  | zzsrv/postgres:latest |
 |  postgres:16  | zzsrv/postgres:16 |
@@ -78,6 +78,7 @@ Github: <https://github.com/zzsrv/Docker>
 |  certbot/certbot:latest  | zzsrv/certbot:latest |
 |  youshandefeiyang/allinone:latest  | zzsrv/allinone:latest |
 |  ollama/ollama:latest  | zzsrv/ollama:latest |
+|  docker.gitea.com/gitea:latest  | zzsrv/gitea:latest |
 |  待补充 | 待补充 |
 
 
