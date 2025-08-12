@@ -43,7 +43,7 @@ alpine:latest
 linuxserver/qbittorrent:latest
 nevinee/qbittorrent:latest=nevinee
 mysql:latest
-zmister/mrdoc:v8
+zmister/mrdoc:v9.3
 frooodle/s-pdf:latest
 ddsderek/wxchat:latest
 postgres:latest
@@ -59,3 +59,4 @@ tinymediamanager/tinymediamanager:latest
 certbot/certbot:latest
 youshandefeiyang/allinone:latest
 ollama/ollama:latest
+docker.gitea.com/gitea:latest
